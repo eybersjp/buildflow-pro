@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // BuildFlow Pro CLI — init command
 // Usage: npx buildflow-pro init
 // Or: node cli/index.js init
