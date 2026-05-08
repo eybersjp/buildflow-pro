@@ -17,7 +17,9 @@
     "buildflow-pro": "cli/index.js"
   },
   "scripts": {
-    "install-kit": "node cli/index.js init"
+    "install-kit": "node cli/index.js init",
+    "test": "node --test",
+    "coverage": "c8 node --test"
   },
   "files": [
     "kit/",
@@ -28,5 +30,8 @@
   ],
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "c8": "^11.0.0"
   }
 }
