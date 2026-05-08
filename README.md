@@ -2,6 +2,10 @@
   <img src="docs/assets/banner.png" alt="BuildFlow Pro Banner" width="100%">
 </p>
 
+<p align="center">
+  <img src="docs/assets/logo-horizontal.png" alt="BuildFlow Pro Logo" width="600">
+</p>
+
 # BuildFlow Pro — Production App Builder for Antigravity
 
 > **A complete, installable build operating system for AI-assisted development — with enforced planning, specialized roles, governance gates, persistent memory, and production-grade discipline baked in from day one.**
