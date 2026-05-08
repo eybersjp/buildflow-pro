@@ -2,7 +2,7 @@
 
 > **A complete, installable build operating system for AI-assisted development — with enforced planning, specialized roles, governance gates, persistent memory, and production-grade discipline baked in from day one.**
 
-[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](https://github.com/your-org/buildflow-pro/releases)
+[![npm version](https://img.shields.io/npm/v/buildflow-pro.svg)](https://www.npmjs.com/package/buildflow-pro)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Built for Antigravity](https://img.shields.io/badge/Built%20for-Antigravity-purple.svg)](https://deepmind.google)
 
@@ -382,10 +382,10 @@ BuildFlow Pro uses the **context-mode pattern** for session management:
 
 | Version | What Changed |
 |---|---|
-| **v2.1 (Current)** | Phase 3: beautiful-docs templates, dev tooling setup, component patterns, error handling patterns, context-mode command, architecture visualization, API docs template, debug log |
-| v2.0 | Phase 2: design system generator, TDD loop, Playwright E2E, safe postgres queries, architecture patterns, multi-agent orchestration, changelog generator, knowledge graph |
-| v1.5 | Phase 1: 9-gate governance, Think in Code mandate, API contract rules, persistent task planning, session continuity hooks |
-| v1.0 | Initial release: 10 skills, 15 workflows, 6 rule files, core templates |
+| **v1.0.3 (Current)** | **Official Public NPM Release** — Includes all features from Phases 1, 2, and 3. CLI NPM execution fixed for Windows. |
+| v1.0.0 | Phase 3: beautiful-docs templates, dev tooling setup, component patterns, error handling patterns, context-mode command, architecture visualization, API docs template, debug log |
+| v0.2.0 | Phase 2: design system generator, TDD loop, Playwright E2E, safe postgres queries, architecture patterns, multi-agent orchestration, changelog generator, knowledge graph |
+| v0.1.0 | Phase 1: 10 skills, 15 workflows, 6 rule files, 9-gate governance, persistent task planning |
 
 ---
 
