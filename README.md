@@ -229,12 +229,14 @@ These rules are active in every session without needing to be invoked:
 your-project/
   .antigravity/
     rules/
-      global-rules.md
-      coding-rules.md
-      security-rules.md
-      testing-rules.md
-      deployment-rules.md
-      api-contract-rules.md          ← APIContractGate enforcement
+      core-rules-dense.md            ← Minified core governance (saves 90% tokens)
+      appendix/
+        global-rules.md              ← Deep context (lazy loaded)
+        coding-rules.md
+        security-rules.md
+        testing-rules.md
+        deployment-rules.md
+        api-contract-rules.md
     workflows/
       00-start-production-app.md     ← Entry point
       01-product-discovery.md
@@ -382,7 +384,8 @@ BuildFlow Pro uses the **context-mode pattern** for session management:
 
 | Version | What Changed |
 |---|---|
-| **v1.0.3 (Current)** | **Official Public NPM Release** — Includes all features from Phases 1, 2, and 3. CLI NPM execution fixed for Windows. |
+| **v1.1.0 (Current)** | **The Token Diet Update** — Minified all 6 rule files into a single `core-rules-dense.md` and moved verbose rules to `appendix/` to reduce session token consumption by ~90%. |
+| v1.0.3 | **Official Public NPM Release** — Includes all features from Phases 1, 2, and 3. CLI NPM execution fixed for Windows. |
 | v1.0.0 | Phase 3: beautiful-docs templates, dev tooling setup, component patterns, error handling patterns, context-mode command, architecture visualization, API docs template, debug log |
 | v0.2.0 | Phase 2: design system generator, TDD loop, Playwright E2E, safe postgres queries, architecture patterns, multi-agent orchestration, changelog generator, knowledge graph |
 | v0.1.0 | Phase 1: 10 skills, 15 workflows, 6 rule files, 9-gate governance, persistent task planning |

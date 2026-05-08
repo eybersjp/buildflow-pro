@@ -26,6 +26,7 @@ echo ""
 echo "Creating folder structure..."
 
 mkdir -p .antigravity/rules
+mkdir -p .antigravity/rules/appendix
 mkdir -p .antigravity/workflows
 mkdir -p .antigravity/commands
 mkdir -p .antigravity/templates

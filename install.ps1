@@ -24,6 +24,7 @@ Write-Host "Creating folder structure..."
 
 $folders = @(
     ".antigravity\rules",
+    ".antigravity\rules\appendix",
     ".antigravity\workflows",
     ".antigravity\commands",
     ".antigravity\templates",

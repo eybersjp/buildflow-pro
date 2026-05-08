@@ -35,6 +35,7 @@ console.log('');
 // Create folders
 const folders = [
   '.antigravity/rules',
+  '.antigravity/rules/appendix',
   '.antigravity/workflows',
   '.antigravity/commands',
   '.antigravity/templates',
