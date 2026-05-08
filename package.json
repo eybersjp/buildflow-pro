@@ -1,6 +1,6 @@
 {
   "name": "buildflow-pro",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Production App Builder for Antigravity — guided path from idea to deployed application",
   "author": "BuildFlow Pro",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "ai-development"
   ],
   "bin": {
-    "buildflow-pro": "./cli/index.js"
+    "buildflow-pro": "cli/index.js"
   },
   "scripts": {
     "install-kit": "node cli/index.js init"
