@@ -44,6 +44,7 @@ It gives the agent:
 | **10 specialized AI roles** | Product Manager, Architect, DB Engineer, Frontend, Backend, QA, Security, DevOps, Release Manager, Docs Writer |
 | **9 intelligence sub-skills** | Design system generator, TDD loop, Playwright E2E, safe Postgres queries, architecture patterns, multi-agent orchestration, changelog generator, component patterns, error handling |
 | **15 structured build workflows** | Step-by-step guides from discovery to deployment |
+| **Modes** | 🏆 **Production Mode:** Standard enterprise-grade discipline (9-Gate Governance, TDD, Full Docs). 🚀 **Prototype Mode:** Fast-track build for hackathons. Skips heavy planning and relaxes strict rules. |
 | **6 always-on rule files** | Global rules, coding rules, security rules, testing rules, deployment rules, API contract rules |
 | **Persistent memory layer** | task-plan, architecture knowledge graph, learned patterns — survive context compaction |
 | **11 commands** | `/plan`, `/plan:status`, `/context-mode`, `/visualize-architecture`, `/build-feature`, and more |
@@ -392,7 +393,8 @@ BuildFlow Pro uses the **context-mode pattern** for session management:
 
 | Version | What Changed |
 |---|---|
-| **v1.1.0 (Current)** | **The Token Diet Update** — Minified all 6 rule files into a single `core-rules-dense.md` and moved verbose rules to `appendix/` to reduce session token consumption by ~90%. |
+| **v1.2.0 (Current)** | **The Speed & Scale Update** — Added **Prototype Mode** for hackathons, skipping documentation/governance. Added `/mode` command. |
+| v1.1.0 | **The Token Diet Update** — Minified all 6 rule files into a single `core-rules-dense.md`. |
 | v1.0.3 | **Official Public NPM Release** — Includes all features from Phases 1, 2, and 3. CLI NPM execution fixed for Windows. |
 | v1.0.0 | Phase 3: beautiful-docs templates, dev tooling setup, component patterns, error handling patterns, context-mode command, architecture visualization, API docs template, debug log |
 | v0.2.0 | Phase 2: design system generator, TDD loop, Playwright E2E, safe postgres queries, architecture patterns, multi-agent orchestration, changelog generator, knowledge graph |

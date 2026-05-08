@@ -301,6 +301,7 @@ project-root/
 | `/plan` | Create or review the current implementation plan |
 | `/plan:status` | View current project status |
 | `/context-mode` | Manage long-session context |
+| `/mode [production\|prototype]` | Switch between standard governance and rapid prototyping |
 | `/visualize-architecture` | Generate Mermaid architecture diagrams |
 | `/build-feature [feature]` | Build a specific feature using TDD |
 | `/security-audit` | Run governance and security checks |

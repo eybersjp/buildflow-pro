@@ -5,6 +5,12 @@ This file stores the current project context. Update it after each major phase.
 
 ---
 
+## Development Mode
+
+Production (Standard) | [Prototype]
+
+---
+
 ## App Name
 
 TBD

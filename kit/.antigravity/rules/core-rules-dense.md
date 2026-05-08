@@ -1,6 +1,11 @@
 # BuildFlow Pro — Core Rules (Dense)
 # ⚠️ READ THIS FILE INSTEAD OF INDIVIDUAL RULE FILES TO SAVE TOKENS.
 
+## 0. Development Modes
+- **Production (Default):** All rules below are STRICTLY enforced. 9-Gate governance is mandatory.
+- **Prototype:** Rules for TDD, 5-state components, and full documentation are RECOMMENDED but NOT ENFORCED. Speed is the priority.
+- **Persistence:** Current mode is stored in `project-context.md`. Do not change unless user runs `/mode`.
+
 ## 1. Global & Governance
 - **Think in Code:** Always format logic, plans, and output as code blocks (markdown, JSON, Mermaid). Do not use conversational fluff.
 - **9-Gate Model:** Scope, Architecture, Security, DataIntegrity, APIContract, Performance, TestCoverage, Compliance, Release. All must pass before deploy.

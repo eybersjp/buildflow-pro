@@ -30,12 +30,18 @@ Display this when the workflow starts:
 ║  We will plan before we build. Every step of the way. ║
 ╚═══════════════════════════════════════════════════════╝
 
-Welcome. Let's build something production-grade.
+Welcome. Let's build something great.
 
-I'll ask you a few guided questions to understand your app.
-If you're unsure about anything, say "guide me" and I'll
-suggest a safe production default.
-```
+---
+
+## Step 0: Mode Selection
+
+Before we start, choose your development mode:
+
+1. **🏆 Production (Recommended):** Full documentation, 9-gate governance, TDD, and strict architecture specs. Use for real apps.
+2. **🚀 Prototype:** Minimal documentation, skipped governance gates, fast scaffolding. Use for hackathons and proofs-of-concept.
+
+**If user chooses Prototype:** Immediately switch to Workflow `00-prototype-build.md`.
 
 ---
 
