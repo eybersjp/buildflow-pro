@@ -1,5 +1,6 @@
 # Command: /mode
-# BuildFlow Pro — System Command
+
+BuildFlow Pro — System Command
 
 ## Purpose
 

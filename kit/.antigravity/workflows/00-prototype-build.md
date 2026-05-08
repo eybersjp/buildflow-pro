@@ -1,5 +1,6 @@
 # Workflow: Start Prototype Build
-# BuildFlow Pro — Workflow 00-PROTOTYPE
+
+BuildFlow Pro — Workflow 00-PROTOTYPE
 
 ## Purpose
 
@@ -8,6 +9,7 @@ Rapidly build a working prototype or MVP with minimal friction, bypassing heavy 
 ## Trigger
 
 Run this workflow when the user says:
+
 - "/mode prototype" (during discovery)
 - "I want to build a prototype"
 - "hackathon mode"
@@ -20,7 +22,8 @@ Run this workflow when the user says:
 **Activate:** `product-manager` skill
 
 Ask the user:
-```
+
+```text
 🚀 PROTOTYPE MODE ACTIVATED
 
 In Prototype Mode, I will skip most documentation (PRD, Architecture Specs, Design Systems) and go straight to building.
@@ -38,6 +41,7 @@ Please answer:
 Create: `docs/PROTOTYPE_SPEC.md`
 
 This is a single, concise file that combines:
+
 - Minimal Requirements
 - Basic Data Model (Mermaid ERD)
 - Core User Flow
@@ -47,6 +51,7 @@ This is a single, concise file that combines:
 ## Step 3: Scaffold & Build
 
 Skip Phases 1-4. Jump directly to:
+
 1. **Scaffold:** `06-project-scaffold.md`
 2. **Build:** Start implementing the core features immediately using `/build-feature`.
 
@@ -55,6 +60,7 @@ Skip Phases 1-4. Jump directly to:
 ## Step 4: Relaxed Rules
 
 During Prototype Mode:
+
 - **TDD is optional.**
 - **Security Audit is optional.**
 - **Multi-state UI (5 states) is recommended but not enforced.**

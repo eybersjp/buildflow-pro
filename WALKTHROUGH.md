@@ -23,9 +23,10 @@ Open the project in Google Antigravity. The `SessionStart` hook fires automatica
 You type:
 > `/start-production-app`
 
-The agent activates the **Product Manager** skill and asks you 12 discovery questions. 
+The agent activates the **Product Manager** skill and asks you 12 discovery questions.
 
 You provide your answers:
+
 > 1. App name: TaskFlow
 > 2. Purpose: Simple task management for remote teams
 > 3. Users: Managers and team members
@@ -34,6 +35,7 @@ You provide your answers:
 > ...
 
 The agent generates the foundation documents:
+
 - `docs/PRD.md`
 - `docs/ARCHITECTURE.md` (and initial `architecture-graph.md`)
 - `docs/DATABASE_SPEC.md`
@@ -50,6 +52,7 @@ You review the documents and type:
 ## 3. Project Scaffold & Dev Tooling
 
 The agent automatically proceeds to Phase 5. It runs:
+
 1. Next.js initialization (`npx create-next-app@latest`)
 2. Dev Tooling Setup (`skills/devops-engineer/dev-tooling-setup.md`)
 
@@ -63,14 +66,17 @@ You type:
 > `/build-feature authentication and user tables`
 
 **Database Engineer** activates:
+
 1. Writes `database/migrations/001_users_and_auth.sql` using Safe Query Patterns.
 2. Implements Row Level Security (RLS) to ensure users only see their own tenant's data.
 
 **Backend Engineer** activates:
+
 1. Writes the auth service functions using the `Result<T>` pattern.
 2. Adds structured `logger.error()` for any backend failures.
 
 **Frontend Engineer** activates:
+
 1. Uses `docs/DESIGN_SYSTEM.md` to style the Login and Signup pages.
 2. Ensures all 5 UI states (Loading, Empty, Error, Success, Denied) are covered.
 
@@ -82,14 +88,17 @@ You type:
 > `/build-feature Task Management Dashboard`
 
 **QA Engineer** (TDD Loop) activates first:
+
 1. Writes the Test Specification table.
 2. Writes failing unit tests for `task.service.ts` and failing E2E Playwright tests for the dashboard.
 
 **Backend Engineer** activates:
+
 1. Implements `createTask`, `listTasks`, etc., using Zod validation.
 2. Returns `ok(data)` or `err(new ValidationError(...))`. The tests go **Green**.
 
 **Frontend Engineer** activates:
+
 1. Chooses the `DataTable` pattern from `component-patterns.md`.
 2. Implements the Dashboard page with `data-testid` attributes.
 3. Connects the UI to the API routes.
@@ -102,6 +111,7 @@ Before deployment, you type:
 > `/security-audit`
 
 The **Security Engineer** evaluates all 9 Governance Gates:
+
 - ✅ **ScopeGate:** Matches PRD.
 - ✅ **ArchitectureGate:** Invariants respected.
 - ✅ **SecurityGate:** RLS is active; no secrets in code.
@@ -121,6 +131,7 @@ You type:
 > `/production-release`
 
 The **Release Manager** activates:
+
 1. Generates `CHANGELOG.md` (e.g., v1.0.0).
 2. Presents the GO / NO-GO decision.
 

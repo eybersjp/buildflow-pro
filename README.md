@@ -392,8 +392,9 @@ BuildFlow Pro uses the **context-mode pattern** for session management:
 ## Version History
 
 | Version | What Changed |
-|---|---|
-| **v1.2.0 (Current)** | **The Speed & Scale Update** — Added **Prototype Mode** for hackathons, skipping documentation/governance. Added `/mode` command. |
+| :--- | :--- |
+| **v1.2.1 (Current)** | **Documentation Polish** — Resolved all remaining markdown linting issues across the framework. |
+| v1.2.0 | **The Speed & Scale Update** — Added **Prototype Mode** for hackathons, skipping documentation/governance. Added `/mode` command. |
 | v1.1.0 | **The Token Diet Update** — Minified all 6 rule files into a single `core-rules-dense.md`. |
 | v1.0.3 | **Official Public NPM Release** — Includes all features from Phases 1, 2, and 3. CLI NPM execution fixed for Windows. |
 | v1.0.0 | Phase 3: beautiful-docs templates, dev tooling setup, component patterns, error handling patterns, context-mode command, architecture visualization, API docs template, debug log |

@@ -4,6 +4,28 @@ All notable changes to the BuildFlow Pro framework will be documented in this fi
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] - 2026-05-08
+
+### Fixed
+- **Documentation Polish:** Fixed 100+ markdown linting warnings across the repository (MD009, MD012, MD022, MD025, MD026, MD030, MD031, MD032, MD033, MD040, MD041, MD058, MD060).
+- Standardized list marker spacing and blank line requirements in all kit workflows and rules.
+- Replaced inline HTML with standard markdown in README for better linter compatibility.
+
+## [1.2.0] - 2026-05-08
+
+### Added
+- **Speed & Scale Update:** Added **Prototype Mode** for rapid prototyping (hackathon mode).
+- `/mode [production|prototype]` command to toggle governance strictness.
+- Specialized `00-prototype-build.md` workflow.
+- Updated `project-context.md` to persist development mode.
+
+## [1.1.0] - 2026-05-08
+
+### Added
+- **Token Diet Update:** Minified 6 core rule files into a single `core-rules-dense.md`.
+- Reduced context usage by ~90% for governance-heavy sessions.
+- Added support for "Dense Rules" in the initialization CLI.
+
 ## [1.0.3] - 2026-05-08
 
 ### Added

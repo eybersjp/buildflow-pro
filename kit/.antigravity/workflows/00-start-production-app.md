@@ -1,5 +1,6 @@
 # Workflow: Start Production App
-# BuildFlow Pro — Workflow 00
+
+BuildFlow Pro — Workflow 00
 
 ## Purpose
 
@@ -8,6 +9,7 @@ Guide the user from a raw app idea to a production-ready build plan, with all do
 ## Trigger
 
 Run this workflow when the user says:
+
 - `/start-production-app`
 - "start production app"
 - "build a new app"
@@ -22,7 +24,7 @@ Run this workflow when the user says:
 
 Display this when the workflow starts:
 
-```
+```text
 ╔═══════════════════════════════════════════════════════╗
 ║          BuildFlow Pro — Production App Builder       ║
 ║                                                       ║
@@ -51,7 +53,7 @@ Before we start, choose your development mode:
 
 Ask the user the following questions. Allow them to answer all at once or one at a time:
 
-```
+```text
 I need to understand your app idea. Please answer as many of these as you can:
 
 1. What is the name of your app?
@@ -78,7 +80,7 @@ If unsure about any question, just say "guide me" for that one.
 
 If the user is unsure about the tech stack, suggest:
 
-```
+```text
 Based on your requirements, here are my recommended defaults:
 
 [DEFAULT] Frontend:  Next.js + TypeScript
@@ -101,6 +103,7 @@ You can change any of these — just say so.
 **Activate:** `product-manager` skill
 
 From the intake answers, produce:
+
 - Product summary (1 paragraph)
 - Problem statement
 - Target users
@@ -123,7 +126,8 @@ Create: `docs/PRD.md`
 Use template: `.antigravity/skills/product-manager/templates/prd-template.md`
 
 Notify the user:
-```
+
+```text
 ✅ PRD created at docs/PRD.md
 Please review it before we continue.
 ```
@@ -135,10 +139,12 @@ Please review it before we continue.
 **Activate:** `software-architect` skill
 
 Create:
+
 - `docs/ARCHITECTURE.md`
 - `docs/ADR/0001-architecture-choice.md`
 
 Include:
+
 - System context diagram (Mermaid)
 - Tech stack with justification
 - Frontend architecture
@@ -148,7 +154,8 @@ Include:
 - Deployment model
 
 Notify the user:
-```
+
+```text
 ✅ Architecture created at docs/ARCHITECTURE.md
 ```
 
@@ -159,10 +166,12 @@ Notify the user:
 **Activate:** `database-engineer` skill
 
 Create:
+
 - `docs/DATABASE_SPEC.md`
 - `database/migrations/001_initial_schema.sql`
 
 Include:
+
 - Entity relationship diagram (Mermaid)
 - Table definitions
 - RLS policies
@@ -170,7 +179,8 @@ Include:
 - Rollback plan
 
 Notify the user:
-```
+
+```text
 ✅ Database spec created at docs/DATABASE_SPEC.md
 ✅ Initial migration at database/migrations/001_initial_schema.sql
 ```
@@ -182,6 +192,7 @@ Notify the user:
 **Activate:** `frontend-engineer` skill + `ui-design-system.md` sub-skill
 
 Create:
+
 - `docs/DESIGN_SYSTEM.md` — complete design system (colors, typography, spacing, component inventory, UX rules, anti-patterns)
 - `src/styles/design-tokens.css` — CSS custom properties for all design tokens
 - `docs/UI_UX_SPEC.md` — page map, navigation structure, and component hierarchy
@@ -197,6 +208,7 @@ The design system is generated first using the industry reasoning engine (8-indu
 Create: `docs/API_SPEC.md`
 
 Include:
+
 - All API endpoints or server actions
 - Request/response schemas
 - Authorization rules per endpoint
@@ -210,7 +222,7 @@ Create: `docs/BUILD_ROADMAP.md`
 The roadmap must include these phases:
 
 | Phase | Name | Goal |
-|---|---|---|
+| :--- | :--- | :--- |
 | 0 | Discovery | App idea defined ✅ |
 | 1 | PRD | Requirements documented ✅ |
 | 2 | Architecture | Tech decisions made ✅ |
@@ -235,7 +247,7 @@ The roadmap must include these phases:
 
 Display:
 
-```
+```text
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                   ✋ APPROVAL REQUIRED
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -264,10 +276,12 @@ Then choose one:
 ## Step 11: Start Phase 5 (after approval)
 
 After the user approves, run in sequence:
+
 1. Workflow: `06-project-scaffold.md`
 2. Skill: `.antigravity/skills/devops-engineer/dev-tooling-setup.md` — configure ESLint, Prettier, TypeScript strict, Husky, VSCode settings
 
 Update:
+
 - `.antigravity/memory/project-state.md` — set phase to "Phase 5: Scaffold"
 - `.antigravity/memory/project-context.md` — fill in app details
 - `.antigravity/memory/architecture-graph.md` — initialize from ARCHITECTURE.md

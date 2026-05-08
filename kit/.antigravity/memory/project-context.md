@@ -1,5 +1,6 @@
 # Project Context
-# BuildFlow Pro — Project Memory
+
+BuildFlow Pro — Project Memory
 
 This file stores the current project context. Update it after each major phase.
 
@@ -30,7 +31,7 @@ TBD
 ## Tech Stack
 
 | Layer | Technology |
-|---|---|
+| :--- | :--- |
 | Frontend | TBD |
 | UI Library | TBD |
 | Database | TBD |
