@@ -6,21 +6,48 @@ This guide demonstrates how to build a production-grade application (a "Task Man
 
 ## 1. Installation & Setup
 
-Start with an empty directory. Install BuildFlow Pro:
+Start with an empty directory. Install BuildFlow Pro via npm:
 
-```powershell
-cd TaskFlow
-# Assuming buildflow-pro installer is available
-.\path\to\buildflow-pro\install.ps1
+```bash
+mkdir TaskFlow && cd TaskFlow
+npx buildflow-pro@latest init
 ```
 
-Open the project in Google Antigravity. The `SessionStart` hook fires automatically, recognizing a new project.
+This installs the full kit into `.antigravity/` and configures Antigravity session hooks
+automatically. Open the project in Antigravity. The `SessionStart` hook fires, confirming
+the framework is active.
+
+**Verify the install:**
+
+```bash
+npx buildflow-pro --version
+# buildflow-pro v1.3.0
+```
 
 ---
 
-## 2. Initiation (`/start-production-app`)
+## 2. Choose Your Mode
+
+BuildFlow Pro supports two modes:
+
+- **🏆 Production (default):** Full 9-Gate governance, TDD, mandatory docs. For real apps.
+- **🚀 Prototype:** Skips heavy planning, relaxed rules. For hackathons and proofs-of-concept.
+
+To switch modes at any time:
+
+```
+/mode prototype
+/mode production
+```
+
+For this walkthrough we use **Production mode**.
+
+---
+
+## 3. Initiation (`/start-production-app`)
 
 You type:
+
 > `/start-production-app`
 
 The agent activates the **Product Manager** skill and asks you 12 discovery questions.
@@ -49,7 +76,7 @@ You review the documents and type:
 
 ---
 
-## 3. Project Scaffold & Dev Tooling
+## 4. Project Scaffold & Dev Tooling
 
 The agent automatically proceeds to Phase 5. It runs:
 
@@ -60,7 +87,7 @@ The agent configures strict TypeScript, ESLint (with type-aware rules), Prettier
 
 ---
 
-## 4. Building the Database & Auth
+## 5. Building the Database & Auth
 
 You type:
 > `/build-feature authentication and user tables`
@@ -82,7 +109,7 @@ You type:
 
 ---
 
-## 5. Building the Core Feature (Task CRUD)
+## 6. Building the Core Feature (Task CRUD)
 
 You type:
 > `/build-feature Task Management Dashboard`
@@ -105,7 +132,7 @@ You type:
 
 ---
 
-## 6. Code Review & Security Audit
+## 7. Code Review & Security Audit
 
 Before deployment, you type:
 > `/security-audit`
@@ -120,7 +147,7 @@ The **Security Engineer** evaluates all 9 Governance Gates:
 
 ---
 
-## 7. Deployment & Release
+## 8. Deployment & Release
 
 You type:
 > `/deploy-preview`

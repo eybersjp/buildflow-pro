@@ -4,6 +4,31 @@ All notable changes to the BuildFlow Pro framework will be documented in this fi
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-05-13
+
+### Added
+
+- **CLI Hardening:** Added `--version` / `-v` and `--help` / `-h` flags to the CLI.
+- **Upgrade Command:** `npx buildflow-pro upgrade` updates kit files without overwriting user-owned memory.
+- **Unknown Command Guard:** CLI now exits with code 1 and a clear error message for unknown commands.
+- **`/generate-docs` Command:** Created missing command file that backs the `/generate-docs` workflow in the README.
+- **Security Templates:** Added `threat-model.md` and `security-audit-report.md` to `security-engineer/templates/`.
+- **`task-archive.md`:** Added missing memory file referenced by `core-rules-dense.md` Rule 6.
+- **`SECURITY.md`:** Vulnerability disclosure policy for the framework repository.
+- **GitHub Actions CI:** `.github/workflows/ci.yml` — auto-runs tests on push/PR across Node 18/20/22.
+- **`docs/CLIENT_ONBOARDING.md`:** Step-by-step onboarding checklist for first clients.
+- **WALKTHROUGH.md update:** Added Prototype Mode section and corrected install instructions to use `npx`.
+
+### Fixed
+
+- CLI version string now reads from `package.json` — no more manual version sync.
+- `init` banner now displays current version dynamically.
+
+### Tests
+
+- Expanded test suite from 2 to **11 tests** (100% pass).
+- Added coverage for: `--version`, `--help`, `upgrade`, idempotent `init`, `BUILD_ROADMAP.md` preservation, unknown command exit code.
+
 ## [1.2.1] - 2026-05-08
 
 ### Fixed
