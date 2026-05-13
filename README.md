@@ -11,7 +11,10 @@
 > **A complete, installable build operating system for AI-assisted development — with enforced planning, specialized roles, governance gates, persistent memory, and production-grade discipline baked in from day one.**
 
 [![npm version](https://img.shields.io/npm/v/buildflow-pro.svg)](https://www.npmjs.com/package/buildflow-pro)
+[![npm downloads](https://img.shields.io/npm/dm/buildflow-pro.svg)](https://www.npmjs.com/package/buildflow-pro)
+[![Node.js CI](https://github.com/eybersjp/buildflow-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/eybersjp/buildflow-pro/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Built for Antigravity](https://img.shields.io/badge/Built%20for-Antigravity-purple.svg)](https://deepmind.google)
 
 ---

@@ -4,6 +4,17 @@ All notable changes to the BuildFlow Pro framework will be documented in this fi
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2026-05-13
+
+### Added
+
+- **Landing Page:** `site/index.html` — beautiful dark-mode single-page site for GitHub Pages.
+  Features: hero, 9-gate grid, build loop diagram, 10 roles grid, stats bar, CTA section.
+- **GitHub Pages Workflow:** `.github/workflows/deploy-site.yml` — auto-deploys `site/` on push to main.
+- **`/feedback` Command:** `kit/.antigravity/commands/feedback.md` — session reflection and pattern capture.
+- **Article Draft:** `docs/ARTICLE_DRAFT.md` — ready-to-publish dev.to / Hashnode article.
+- **README Badge Hygiene:** Added npm downloads, Node.js CI, and PRs Welcome badges.
+
 ## [1.4.0] - 2026-05-13
 
 ### Added
