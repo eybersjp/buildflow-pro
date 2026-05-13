@@ -4,6 +4,21 @@ All notable changes to the BuildFlow Pro framework will be documented in this fi
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-05-13
+
+### Added
+
+- **Demo Project:** Full `examples/todo-saas/` example showing complete BuildFlow Pro output:
+  - `docs/PRD.md` — Full product requirements with user journeys and acceptance criteria
+  - `docs/ARCHITECTURE.md` — C4 context diagram, Mermaid flow diagrams, ADR index
+  - `docs/DATABASE_SPEC.md` — ERD, RLS policies, index strategy, rollback plan
+  - `docs/DESIGN_SYSTEM.md` — Color palette, typography, component inventory, motion rules
+  - `docs/API_SPEC.md` — All endpoints, auth matrix, error codes, contract rules
+  - `docs/BUILD_ROADMAP.md` — Mid-project state with gates cleared and active tasks
+  - `.antigravity/memory/project-context.md` — Realistic populated context file
+  - `.antigravity/memory/task-plan.md` — Realistic mid-Phase 6 task state
+- **`SUPPORT.md`:** Support escalation paths, known limitations, contributing links.
+
 ## [1.3.0] - 2026-05-13
 
 ### Added
