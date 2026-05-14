@@ -229,7 +229,55 @@ graph LR
 
 ---
 
-## Step 7 — Generate Surprising Connections Summary
+## Step 7 — Generate Governance Health Map
+
+This diagram visualises the "ready-for-production" status of major features across the 9 Gates:
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1e293b'}}}%%
+graph LR
+    subgraph StatusLegend["🎨 Legend"]
+        P[Passed Gate]
+        F[Failed Gate]
+        W[Work In Progress]
+        N[Not Started]
+    end
+
+    subgraph Features["🚀 Feature Governance Status"]
+        F1["[Feature Name A]"]
+        F2["[Feature Name B]"]
+        F3["[Feature Name C]"]
+    end
+
+    subgraph Gates["⚖️ The 9 Gates"]
+        G1[Scope]
+        G2[Architecture]
+        G3[Security]
+        G4[Data Integrity]
+        G5[API Contract]
+        G6[Performance]
+        G7[Test Coverage]
+        G8[Compliance]
+        G9[Release]
+    end
+
+    F1 --- G1 & G2 & G3 & G4 & G5 & G6 & G7 & G8 & G9
+    F2 --- G1 & G2 & G3 & G4 & G5 & G6 & G7 & G8 & G9
+
+    %% Use classDef to color nodes based on status in the actual output
+    classDef passed fill:#166534,stroke:#15803d,color:#fff
+    classDef failed fill:#991b1b,stroke:#b91c1c,color:#fff
+    classDef wip fill:#854d0e,stroke:#a16207,color:#fff
+    
+    %% Example application
+    class G1,G2 passed
+    class G3 wip
+    class G7 failed
+```
+
+---
+
+## Step 8 — Generate Surprising Connections Summary
 
 After generating diagrams, produce a written summary of the non-obvious dependencies from the architecture graph:
 
@@ -271,6 +319,9 @@ Format:
 ## Dependency Map
 [Dependency Mermaid diagram]
 
+## Governance Health Map
+[Governance status Mermaid diagram]
+
 ## Surprising Connections
 [Written summary table]
 ```
@@ -285,6 +336,7 @@ Announce completion:
   • Authentication + Data Flow Sequence
   • God Node Impact Map
   • Dependency Graph
+  • Governance Health Map (9 Gates)
   • Surprising Connections Summary
 
 Open docs/ARCHITECTURE_DIAGRAM.md to review.

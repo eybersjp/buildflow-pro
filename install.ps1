@@ -34,6 +34,8 @@ $folders = @(
     ".antigravity\skills\database-engineer\templates",
     ".antigravity\skills\frontend-engineer\templates",
     ".antigravity\skills\design-engineer\templates",
+    ".antigravity\skills\sre-engineer\templates",
+    ".antigravity\skills\growth-engineer\templates",
     ".antigravity\skills\backend-engineer\templates",
     ".antigravity\skills\qa-engineer\templates",
     ".antigravity\skills\security-engineer\templates",
@@ -212,7 +214,7 @@ Write-Host ""
 Write-Host "What's installed:"
 Write-Host "  .antigravity\rules\         — 6 always-on rule files"
 Write-Host "  .antigravity\workflows\     — 15 workflows (3 enhanced in v2.1)"
-Write-Host "  .antigravity\skills\        — 11 core roles + 10 intelligence sub-skills"
+Write-Host "  .antigravity\skills\        — 13 core roles + 10 intelligence sub-skills"
 Write-Host "  .antigravity\commands\      — 11 user-facing commands"
 Write-Host "  .antigravity\templates\     — PRD, architecture, beautiful-docs (README/CONTRIBUTING/API)"
 Write-Host "  .antigravity\memory\        — task-plan, architecture-graph, learned-patterns, debug-log"

@@ -44,7 +44,7 @@ It gives the agent:
 
 | What | How |
 |---|---|
-| **11 specialized AI roles** | Product Manager, Architect, DB Engineer, Frontend, Backend, QA, Security, DevOps, Release Manager, Docs Writer, Design Engineer |
+| **13 specialized AI roles** | PM, Architect, DB, Frontend, Backend, QA, Security, DevOps, Release, Docs, Design, SRE, Growth |
 | **10 intelligence sub-skills** | Karpathy Discipline, Design system generator, TDD loop, Playwright E2E, safe Postgres queries, architecture patterns, multi-agent orchestration, changelog generator, component patterns, error handling |
 | **15 structured build workflows** | Step-by-step guides from discovery to deployment |
 | **Modes** | 🏆 **Production Mode:** Standard enterprise-grade discipline (9-Gate Governance, TDD, Full Docs). 🚀 **Prototype Mode:** Fast-track build for hackathons. Skips heavy planning and relaxes strict rules. |
@@ -158,7 +158,9 @@ The system guides you from idea → PRD → architecture → database → design
 | 🏗️ Software Architect | `skills/software-architect/SKILL.md` | System design, ADRs, architecture graph |
 | 🗄️ Database Engineer | `skills/database-engineer/SKILL.md` | Schema, migrations, RLS, indexes |
 | 🎨 Frontend Engineer | `skills/frontend-engineer/SKILL.md` | Pages, components, forms, 5-state UI |
-| 🪄 Design Engineer | `skills/design-engineer/SKILL.md` | Brand-grade prototypes, web/mobile mocks, design systems |
+| 🪄 Design Engineer | `skills/design-engineer/SKILL.md` | Brand-grade prototypes, design systems |
+| 📟 SRE Engineer | `skills/sre-engineer/SKILL.md` | Observability, SLOs, monitoring, post-mortems |
+| 📈 Growth Engineer | `skills/growth-engineer/SKILL.md` | SEO, analytics, conversion optimization |
 | ⚙️ Backend Engineer | `skills/backend-engineer/SKILL.md` | Services, API routes, validation, audit |
 | 🧪 QA Engineer | `skills/qa-engineer/SKILL.md` | Test plans, unit tests, E2E, coverage gates |
 | 🔒 Security Engineer | `skills/security-engineer/SKILL.md` | OWASP review, all 9 governance gates |
@@ -288,6 +290,12 @@ your-project/
       design-engineer/
         SKILL.md
         templates/
+      sre-engineer/
+        SKILL.md
+        templates/
+      growth-engineer/
+        SKILL.md
+        templates/
       backend-engineer/
         SKILL.md
         error-handling-patterns.md   ← Result<T> + typed errors
@@ -400,7 +408,8 @@ BuildFlow Pro uses the **context-mode pattern** for session management:
 
 | Version | What Changed |
 | :--- | :--- |
-| **v2.2.0 (Current)** | **The Karpathy Discipline Update** — Integrated Andrej Karpathy's coding principles (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) into the core ruleset to reduce LLM coding pitfalls. |
+| **v2.3.0 (Current)** | **The Observability & Growth Update** — Added 12th & 13th AI roles: SRE (Observability) and Growth Engineer (SEO/Analytics). Added `/visualize-architecture` Health Map and `.antigravity/memory/pitfalls.md`. |
+| v2.2.0 | **The Karpathy Discipline Update** — Integrated Karpathy's coding principles into core rules. |
 | v2.1.0 | **The Design Engineer Update** — Added 11th AI role: Design Engineer. Artifact-first design workflow with 5-dimensional self-critique. |
 | v1.2.0 | **The Speed & Scale Update** — Added **Prototype Mode** for hackathons, skipping documentation/governance. Added `/mode` command. |
 | v1.1.0 | **The Token Diet Update** — Minified all 6 rule files into a single `core-rules-dense.md`. |

@@ -37,6 +37,8 @@ mkdir -p .antigravity/skills/software-architect/templates
 mkdir -p .antigravity/skills/database-engineer/templates
 mkdir -p .antigravity/skills/frontend-engineer/templates
 mkdir -p .antigravity/skills/design-engineer/templates
+mkdir -p .antigravity/skills/sre-engineer/templates
+mkdir -p .antigravity/skills/growth-engineer/templates
 mkdir -p .antigravity/skills/backend-engineer/templates
 mkdir -p .antigravity/skills/qa-engineer/templates
 mkdir -p .antigravity/skills/security-engineer/templates
@@ -208,7 +210,7 @@ echo ""
 echo "What's installed:"
 echo "  .antigravity/rules/         — 6 always-on rule files"
 echo "  .antigravity/workflows/     — 15 workflows (3 enhanced in v2.1)"
-echo "  .antigravity/skills/        — 11 core roles + 10 intelligence sub-skills"
+echo "  .antigravity/skills/        — 13 core roles + 10 intelligence sub-skills"
 echo "  .antigravity/commands/      — 11 user-facing commands"
 echo "  .antigravity/templates/     — PRD, architecture, beautiful-docs (README/CONTRIBUTING/API)"
 echo "  .antigravity/memory/        — task-plan, architecture-graph, learned-patterns, debug-log"

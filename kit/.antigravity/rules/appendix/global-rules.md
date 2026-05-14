@@ -220,6 +220,7 @@ For any SaaS application:
 After every phase, update:
 - `docs/BUILD_ROADMAP.md` — phase status
 - `.antigravity/memory/changelog.md` — what changed
+- `.antigravity/memory/pitfalls.md` — log any mistake or anti-pattern learned
 - `.antigravity/memory/project-state.md` — current phase
 - `.antigravity/memory/decisions.md` — if an architectural decision was made
 - `.antigravity/memory/task-plan.md` — update progress on current task plan

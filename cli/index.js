@@ -134,6 +134,8 @@ const folders = [
   '.antigravity/skills/database-engineer/templates',
   '.antigravity/skills/frontend-engineer/templates',
   '.antigravity/skills/design-engineer/templates',
+  '.antigravity/skills/sre-engineer/templates',
+  '.antigravity/skills/growth-engineer/templates',
   '.antigravity/skills/backend-engineer/templates',
   '.antigravity/skills/qa-engineer/templates',
   '.antigravity/skills/security-engineer/templates',
