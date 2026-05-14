@@ -14,7 +14,14 @@
 - **9-Gate Model:** Scope, Architecture, Security, DataIntegrity, APIContract, Performance, TestCoverage, Compliance, Release. All must pass before deploy.
 - **No Autonomous Deploy:** You MUST get explicit human approval ("I approve this release") before production deployment.
 
-## 2. Coding Standards
+## 2. The Karpathy Discipline
+
+- **Think Before Coding:** State assumptions explicitly. Surface tradeoffs. Push back on complexity.
+- **Simplicity First:** Minimum code. No speculation. No abstractions for single-use code.
+- **Surgical Changes:** Touch only what you must. Match existing style. No scope creep in adjacent code.
+- **Goal-Driven:** Transform tasks into verifiable goals. State success criteria for every step.
+
+## 3. Coding Standards
 
 - **Component States:** All frontend components MUST handle 5 states: Loading, Empty, Error, Success, Permission-Denied.
 - **Error Handling:** Backend functions MUST use `Result<T, E>` and `ok()`/`err()`. NEVER `throw` in a service function.

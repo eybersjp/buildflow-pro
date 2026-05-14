@@ -44,8 +44,8 @@ It gives the agent:
 
 | What | How |
 |---|---|
-| **10 specialized AI roles** | Product Manager, Architect, DB Engineer, Frontend, Backend, QA, Security, DevOps, Release Manager, Docs Writer |
-| **9 intelligence sub-skills** | Design system generator, TDD loop, Playwright E2E, safe Postgres queries, architecture patterns, multi-agent orchestration, changelog generator, component patterns, error handling |
+| **11 specialized AI roles** | Product Manager, Architect, DB Engineer, Frontend, Backend, QA, Security, DevOps, Release Manager, Docs Writer, Design Engineer |
+| **10 intelligence sub-skills** | Karpathy Discipline, Design system generator, TDD loop, Playwright E2E, safe Postgres queries, architecture patterns, multi-agent orchestration, changelog generator, component patterns, error handling |
 | **15 structured build workflows** | Step-by-step guides from discovery to deployment |
 | **Modes** | 🏆 **Production Mode:** Standard enterprise-grade discipline (9-Gate Governance, TDD, Full Docs). 🚀 **Prototype Mode:** Fast-track build for hackathons. Skips heavy planning and relaxes strict rules. |
 | **6 always-on rule files** | Global rules, coding rules, security rules, testing rules, deployment rules, API contract rules |
@@ -158,6 +158,7 @@ The system guides you from idea → PRD → architecture → database → design
 | 🏗️ Software Architect | `skills/software-architect/SKILL.md` | System design, ADRs, architecture graph |
 | 🗄️ Database Engineer | `skills/database-engineer/SKILL.md` | Schema, migrations, RLS, indexes |
 | 🎨 Frontend Engineer | `skills/frontend-engineer/SKILL.md` | Pages, components, forms, 5-state UI |
+| 🪄 Design Engineer | `skills/design-engineer/SKILL.md` | Brand-grade prototypes, web/mobile mocks, design systems |
 | ⚙️ Backend Engineer | `skills/backend-engineer/SKILL.md` | Services, API routes, validation, audit |
 | 🧪 QA Engineer | `skills/qa-engineer/SKILL.md` | Test plans, unit tests, E2E, coverage gates |
 | 🔒 Security Engineer | `skills/security-engineer/SKILL.md` | OWASP review, all 9 governance gates |
@@ -284,6 +285,9 @@ your-project/
         ui-design-system.md          ← Industry design system generator
         component-patterns.md        ← 6 React component patterns
         templates/page-template.tsx
+      design-engineer/
+        SKILL.md
+        templates/
       backend-engineer/
         SKILL.md
         error-handling-patterns.md   ← Result<T> + typed errors
@@ -396,7 +400,8 @@ BuildFlow Pro uses the **context-mode pattern** for session management:
 
 | Version | What Changed |
 | :--- | :--- |
-| **v1.2.1 (Current)** | **Documentation Polish** — Resolved all remaining markdown linting issues across the framework. |
+| **v2.2.0 (Current)** | **The Karpathy Discipline Update** — Integrated Andrej Karpathy's coding principles (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) into the core ruleset to reduce LLM coding pitfalls. |
+| v2.1.0 | **The Design Engineer Update** — Added 11th AI role: Design Engineer. Artifact-first design workflow with 5-dimensional self-critique. |
 | v1.2.0 | **The Speed & Scale Update** — Added **Prototype Mode** for hackathons, skipping documentation/governance. Added `/mode` command. |
 | v1.1.0 | **The Token Diet Update** — Minified all 6 rule files into a single `core-rules-dense.md`. |
 | v1.0.3 | **Official Public NPM Release** — Includes all features from Phases 1, 2, and 3. CLI NPM execution fixed for Windows. |

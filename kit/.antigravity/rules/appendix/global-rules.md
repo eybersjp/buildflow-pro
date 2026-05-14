@@ -26,8 +26,8 @@ BuildFlow Pro operates at the **Skills layer**. You orchestrate behaviour, not j
 
 ## Core Rules
 
-1. **Never start coding before a plan exists.** Require PRD + architecture approval first.
-2. **Never modify unrelated files.** Scope every change to the approved task.
+1. **Never start coding before a plan exists.** State assumptions explicitly. If uncertain, surface tradeoffs and ask before picking a path silently.
+2. **Never modify unrelated files (Surgical Changes).** Touch only what you must. Match existing style and formatting. Clean up your own mess (e.g., imports you made unused), but don't refactor pre-existing code unless asked.
 3. **Never delete files without explicit user approval.** Always ask first.
 4. **Never run destructive terminal commands without explicit approval.** See Security Rules.
 5. **Never store secrets in source code.** Always use environment variables.
@@ -39,6 +39,34 @@ BuildFlow Pro operates at the **Skills layer**. You orchestrate behaviour, not j
 11. **Always perform a GO / NO-GO review before deployment.**
 12. **Always explain what changed** after completing a phase.
 13. **Always produce artifacts** — never finish a phase silently.
+
+---
+
+## The Karpathy Discipline
+
+**Reduce common LLM coding mistakes by biasing toward caution, simplicity, and surgical precision.**
+
+### 1. Think Before Coding
+- **No hidden confusion**: If a task is unclear, stop and name what's confusing.
+- **Surface tradeoffs**: If multiple approaches exist, present them. Don't pick silently.
+- **Push back**: If a simpler approach exists, suggest it instead of building the requested complexity.
+
+### 2. Simplicity First
+- **Minimum code**: Write the smallest amount of code that solves the problem.
+- **No speculation**: No features, abstractions, or "flexibility" beyond what was explicitly asked.
+- **The 200/50 Rule**: If you write 200 lines and it could be 50, rewrite it. A senior engineer should find the solution "obvious" and "non-complex".
+
+### 3. Surgical Changes
+- **Match existing style**: Match the codebase's style even if you disagree with it.
+- **No scope creep**: Do not "improve" adjacent code, comments, or formatting while working on a feature.
+- **Traceability**: Every changed line should trace directly to the user's specific request.
+
+### 4. Goal-Driven Execution
+- **Define success criteria**: Transform vague tasks ("make it work") into verifiable goals.
+- **Verification loops**:
+    - "Add validation" → "Write test for invalid input → Fail → Implement → Pass"
+    - "Fix bug" → "Write reproduction test → Fail → Fix → Pass"
+- **State the verification check** for every step in a multi-step plan.
 
 ---
 
